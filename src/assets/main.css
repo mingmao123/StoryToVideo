@@ -1,0 +1,62 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+:root {
+  /* Layout */
+  --bg-sidebar: #2F3542;
+  --bg-main: #F4F6F9;
+  --bg-card: #FFFFFF;
+  
+  /* Text */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-sidebar-active: #D4A34B;
+
+  /* Brand / Gradient */
+  --brand-blue: #3698F5;
+  --brand-green: #6CC24A;
+  --hero-gradient: linear-gradient(to right, var(--brand-blue), var(--brand-green));
+
+  /* Accents / Cards */
+  --accent-cyan: #3CB4D5;
+  --accent-green: #76C652;
+  --accent-blue: #5591F2;
+  --accent-orange: #F0AF46;
+  --accent-red: #F07A6D;
+  
+  /* Borders & Dividers */
+  --border-color: #E4E7ED;
+}
